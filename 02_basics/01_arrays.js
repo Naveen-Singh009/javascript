@@ -37,3 +37,5 @@ const myn2 = myArr.splice(1,3) // this method removes the part of array from the
 console.log(myn2); // including 3
 
 console.log("c" , myArr);
+
+
