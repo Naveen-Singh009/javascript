@@ -75,17 +75,55 @@ const users= [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); //returned datatype is array // we can use this easily
-console.log(Object.values(tinderUser)); //returned datatype is array // we can use this easily
-console.log(Object.entries(tinderUser)); //returned datatype is array // we can use this easily
+// console.log(Object.keys(tinderUser)); //returned datatype is array // we can use this easily
+// console.log(Object.values(tinderUser)); //returned datatype is array // we can use this easily
+// console.log(Object.entries(tinderUser)); //returned datatype is array // we can use this easily
 // array inside array keys and value makes one array and all key value pairs will be different diff array
 
 
 
 // if value does  exist or not in object 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+
+const course = {
+    coursename : "javascript",
+    prince : "100",
+    courseInstructor : "hitesh" 
+}
+
+// course.courseInstructor
+//destructuring
+const {courseInstructor : instructor} = course  //extracting the value from course object
+// now we dont need to write course.courseInstructor 
+// console.log(courseInstructor);
+console.log(instructor);
+
+
+
+//API's
+//json structure // key and values both are in string
+// {
+//     "name" : "naveen",
+//     "course name" : "js in error",
+//     "price" : "hello"
+// }
+
+//api in array formate
+[
+    {},
+    {},
+    {},
+    {}
+]
+
+
+
+
+
 
 
 
