@@ -1,10 +1,10 @@
 const score = 344;
 
-const balance = new Number(322)
+const balance = new Number(322.898789)
 // console.log(balance);
 // console.log(balance.toString());
 // console.log(balance.toString().length);
-// console.log(balance.toFixed(2)); // it will give the 2 value ater point
+console.log(balance.toFixed(2)); // it will give the 2 value ater point
 
 const num2 = 23.5342
 // console.log(num2.toPrecision(3));
@@ -27,12 +27,12 @@ const hndreds  = 10000000
 // console.log(Math.min(3,42,5,2,1)); //min among these
 // console.log(Math.max(2,4,55,21)); //max among these
 
-console.log(Math.random());
-console.log((Math.random()*10)+1);
-console.log(Math.floor(Math.random()*10)+1);
+// console.log(Math.random());
+// console.log((Math.random()*10)+1);
+// console.log(Math.floor(Math.random()*10)+1);
 
 
 const min = 10
 const max = 20
 
-console.log(Math.floor(Math.random() * (max - min +1))+min)
+// console.log(Math.floor(Math.random() * (max - min +1))+min)

@@ -3,7 +3,7 @@
 // 7 types : string, number , boolean , null , udefined, symbol, BigInt
 
 // JavaScript is both dynamic typed language
-const score  = 100
+const score = 100
 const scoreValue = 200.43
 
 const isLoggedIn = false
@@ -29,7 +29,7 @@ const heros = ["shaktiman" , "naagraj" , "doga"];
 let myObj ={
     name :"Naveen", 
     age : 23,
-    rank : 11, 
+    rank : 11
 }
 
 const myFun = function(){
