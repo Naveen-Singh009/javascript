@@ -2,11 +2,157 @@
 <html lang="en">
 <head>
     <title>Dom Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading">Dom learning on chai or code</h1>
+<body class="bg-black">
+    <div>
+        <h1 id="title" class="heading"> Dom learning on chai or code <span style="display: none;">Hello test</span></h1>
         <p>Lorem ipsum dolor sit amet.</p>
+        <h1>this is a good coder ..</h1>
+        <h1>this is a good coder ..</h1>
+        <h1>this is a good coder ..</h1>
+        <h1>this is a good coder ..</h1>
+
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
     </div>
 </body>
 </html>
+
+
+<!-- document.getElementById("title") //getting element from html page by their id
+<h1 id="title" class="heading">
+
+.id
+Uncaught SyntaxError: expected expression, got '.'
+debugger eval code:1:1
+document.getElementById("title").id
+"title"
+document.getElementById("title").id
+"title"
+document.getElementById("title").className // extracting class name 
+"heading"
+document.getElementById('title')
+<h1 id="title" class="heading">
+   
+    //we can get attribute by this getAttribute method
+document.getElementById('title').getAttribute('id')
+"title"
+document.getElementById('title').getAttribute('class')
+"heading"
+
+// we can set attribute 
+// it override the exixting attribute
+// if we want both attribute we pass 2 attributes
+
+document.getElementById('title').setAttribute('class', 'test')
+undefined
+document.getElementById('title').setAttribute('class', 'test' , 'heading')
+undefined 
+
+//we can store the value 
+​const title = document.getElementById("title")
+undefined
+title
+<h1 id="title" class="heading">
+
+    //now we can perform the operation using title variable
+    //  like styling
+
+    title.style.backgroundColor ='green'
+"green"
+title.style.backgroundColor ='blue'
+"blue" 
+title.style.borderRadius = '23px'
+
+// adding content 
+
+difference bw inner text and innerContent
+title.innerText// used to show content of the file 
+"Dom learning on chai or code"
+title.textContent //used to show all the content including hidden content
+"Dom learning on chai or code Hello test"
+
+title.innerHTML// itshows all the html tags which are written inside the text
+ Dom learning on chai or code <span style="display: none;">Hello test</span>'
+
+
+ /// Selectors
+​
+//document.querySelector('') // we can use css selector like
+// .class_name #Id_name
+
+const list = document.querySelector('ul')  //selecting ul list
+const turnGreen = list.querySelector('li') 
+turnGreen.style.backgroundColor = 'green' 
+turnGreen.style.padding = '10px'
+
+
+2.. 
+
+document.querySelectorAll('li') // it gives node list
+not pure array  so check properties 
+const tempList = document.querySelectorAll('li')
+
+templist.style.color = 'green' // will not work bc it is not an array its node list
+// for working
+templist[0].style.color = 'green'
+
+const myH1 = document.querySelectorAll('h1')
+myH1 ->> node list
+myH1[0].style.color = 'green' 
+myH1.[0].innerText
+
+
+
+templist.forEach( function (l) {
+    l.style.backgroundColor = 'green'
+} )
+
+
+
+// /////////
+document.getElementByClassName('list') // it will return html collection
+// for each will not work on it
+
+const tempList = document.getElementByClassName('list')
+// convert html collection to array then perform the operations
+
+Array.from(tempList)  // it will convert into the array
+
+const myConvertedArray = Array.from(tempList)
+// now we have all the methods of the arrays 
+
+myConvertedArray.forEach(function(li) {
+    li.style.color = 'orange'
+})
+
+
+
+// maniupulating the content by extraction them by their class name
+
+const myH2 = document.getElementByClassName('class1')
+
+myH2.forEach(function(h){
+    h.style.color = 'black';
+    h.style.backgroundColor = 'green';
+    h.style.padding = '10px';
+    h.innerText = 'Naveen'
+})
+
+
+ 
+
+-->
+
+​
+
