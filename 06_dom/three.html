@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaiOrCode</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div') // creating an element
+    console.log(div);   // these are common attributes to set
+    div.className = "main"
+    div.id = Math.round(Math.random() * 10 + 1)
+
+    div.setAttribute("title" , "generated title") // setting another atribute and attaching them in page
+    div.style.backgroundColor = 'green'
+    div.style.padding = "12px"
+    // div.innerText = "Hey this is code for dom" // it first fetch the text from page then override the text
+     const addText = document.createTextNode("chai or code") // it directly write the text to the page
+     div.appendChild(addText)
+     
+     document.body.appendChild(div)  // finally attaching the div to the document
+
+     // for creating more div and adding to the documnet 
+     // we can wrapup the whole code in a function and give them argumet 
+     // according to our need 
+     // we can run a for loop for an array and give the input to the function
+</script>
+</html>
