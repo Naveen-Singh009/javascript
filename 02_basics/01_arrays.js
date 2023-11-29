@@ -27,7 +27,7 @@ const myArr2 = new Array(1,2,3,4,5)
 
 
 console.log("A " , myArr);
-const myn1 = myArr.slice(1,3) // this does manupulate original array //3 excluded
+const myn1 = myArr.slice(1,3) // this does not manupulate original array //3 excluded
 
 console.log(myn1);
 console.log("B " , myArr);
