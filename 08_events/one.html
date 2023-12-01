@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <!-- we can write onclick in html tag onclick -->
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // all events will run sequencely
+    // adding on click in owl 
+    // const owl = document.getElementById('owl')
+    // owl.onclick = function(){ // less features
+    //     alert("owl clicked")
+    // } // this is also a wrong approach 
+    // it may create some problems on id so we have to use eventListener
+    // eventlistener provide onclick functionality and propogation 
+
+     // type, timestamp ,
+    // defaultPrevented - it can stop default behaviour
+    // target, toElement 
+    // srcElement , currentTarget, client - clientX, clientY, screenX, screenY
+    // altKey, ctrlKey , shiftKey, keyCode
+    // 
+
+    // approach 2
+    // best 
+     // attachevent approach 
+    // jQuery - onEvent 
+    //eventPropogation - bubbling up .. inner elemet first clicked ... inside to outside ...
+//     document.getElementById('owl').addEventListener('click' , function(e){  //e is event object here
+//         console.log(e);
+        
+//     } , false) // there is an default parameter false is present here known as event propogation
+//     // if true is written here it means capturing mode
+//    // it goes top to bottom 
+
+//     document.getElementById('images').addEventListener('click' , function(e){  //e is event object here
+//         console.log("clicked inside the ul");
+        
+//     }, false) // there is an default parameter false is present here known as event propogation
+//     // top to botom 
+//     // first images will be clicke then inside 
+//     document.getElementById('owl').addEventListener('click' , function(e){  //e is event object here
+//         console.log("owl clicked "); 
+//         e.stopPropagation()   // event bubble ho kr uper waale event pr nhi jaayega
+//     }, false) // there is an default parameter false is present here known as event propogation
+
+//    document.getElementById("google").addEventListener('click' , function(e){
+//     e.preventDefault();
+//     e.stopPropagation()
+//     console.log("google clicked"); // default behaviour prevented
+//    }, false)
+
+
+    
+
+    // clicking image and image will gayab
+
+    document.querySelector('#images').addEventListener('click' , function(e){
+        console.log(e.target.parentNode.tagName);
+        // approach 1
+        // in this approach the items is also removed if clicked so we are using tagName property of event
+
+        if(e.target.tagName === 'IMG'){ // li will be clicked but not removed 
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+             removeIt.remove();
+        }
+        // approach2 
+        // removeIt.parentNode.removeChild(removeIt)
+    } , false)
+
+</script>
+</html>
