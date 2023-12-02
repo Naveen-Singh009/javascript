@@ -1,0 +1,14 @@
+javascript--> synchronous
+              single threaded
+            this is default javascript behaviour
+
+execution context  
+    1 -> execute one line of code at a time
+    2-> console log 1
+    3 > console log 2 
+
+    each operation waits for the last one to complete before executing
+
+
+    blocking code -> block the flow of progam -> read file synchronous
+    non-Blocking Code -> does not block execution -> read file async
