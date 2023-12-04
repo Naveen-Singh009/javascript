@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <h1>Chai aur JavaScript</h1>
+   <button id="start">Start</button>
+   <button id="stop">Stop</button>
+</body>
+<script>
+    // setinterval -> runs like a  loop after every given time 
+    // setInterval(function(){
+    //     console.log("naveen" , Date.now());
+    // }, 1000)
+
+    const sayDate = function(){
+        console.log("Hitesh", Date.now());
+    }
+    // const interval = setInterval(sayDate, 1000, "hi")
+    document.querySelector('#start').addEventListener('click',function(){
+        setInterval(sayDate, 1000, "hi")
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(setInterval(sayDate, 1000, "hi"))
+    })
+    
+
+    
+
+
+</script>
+</html>
