@@ -1,16 +1,16 @@
 
 // var c = 32
-let a = 700
+// let a = 700
 if(true){
     let a = 20 
     const b = 33
     var c = 90
-    // console.log("inner" , a);
+    console.log("inner" , a);
 }
 
-// console.log(a); not accessable
+// console.log(a); //not accessable
 // console.log(b); 
-// console.log(c); // var is accessible
+console.log(c); // var is accessible
 
 function one() {
     const username = "naveen"
@@ -52,5 +52,6 @@ const addTwo = function(value){
     return value + 4
 }
 
+// console.log(addTwo(32));
 
 

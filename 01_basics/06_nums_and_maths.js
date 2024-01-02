@@ -4,7 +4,7 @@ const balance = new Number(322.898789)
 // console.log(balance);
 // console.log(balance.toString());
 // console.log(balance.toString().length);
-console.log(balance.toFixed(2)); // it will give the 2 value ater point
+// console.log(balance.toFixed(2)); // it will give the 2 value ater point
 
 const num2 = 23.5342
 // console.log(num2.toPrecision(3));

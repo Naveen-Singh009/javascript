@@ -97,10 +97,10 @@ const course = {
 
 // course.courseInstructor
 //destructuring
-const {courseInstructor : instructor} = course  //extracting the value from course object
+// const {courseInstructor : instructor } = course  //extracting the value from course object
 // now we dont need to write course.courseInstructor 
 // console.log(courseInstructor);
-console.log(instructor);
+// console.log(instructor);
 
 
 
@@ -119,12 +119,3 @@ console.log(instructor);
     {},
     {}
 ]
-
-
-
-
-
-
-
-
-

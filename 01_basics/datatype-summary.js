@@ -50,10 +50,10 @@ const myFun = function(){
 let myCh = "naveengusain0" //example
 
 let anothech = myCh
-console.log(anothech);
+// console.log(anothech);
 
 anothech = "thisIsMych"
-console.log(anothech);
+// console.log(anothech);
 
 let userOne = {
     email : "email.com",

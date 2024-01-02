@@ -58,11 +58,11 @@ const loggedFromEmail = true
 //     }
 // }
 
-// if(userLoggedIn && debitCart ){ // we can use myltile and checks 
+// if(userLoggedIn && debitCart ){ // we can use myltiple and checks 
 //     console.log("allowed to shop");
 // }
 
-// if(loggedFromEmail || loggedInFromGoogle){ // we can user myltiple or checks 
+// if(loggedFromEmail || loggedInFromGoogle){ // we can use myltiple or checks 
 //     console.log("user is logged in ");
 // }
 

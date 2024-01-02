@@ -36,19 +36,19 @@ const jsUser = {
 // console.log(jsUser)
 
 
-// adding function in objects
-jsUser.greeting = function(){
-    console.log("hello js user");
-}
+// // adding function in objects
+// jsUser.greeting = function(){
+//     console.log("hello js user");
+// }
 
 
-jsUser.greetingtwo = function(){
-    console.log(`hello js user , ${this.name}`);
-}
+// jsUser.greetingtwo = function(){
+//     console.log(`hello js user , ${this.name}`);
+// }
 
-// we can use both greeting and greeting()
-console.log(jsUser.greeting); // reference of function
-console.log(jsUser.greeting()); 
-console.log(jsUser.greetingtwo());
+// // we can use both greeting and greeting()
+// console.log(jsUser.greeting); // reference of function
+// console.log(jsUser.greeting()); 
+// console.log(jsUser.greetingtwo());
 
 

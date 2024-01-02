@@ -9,14 +9,14 @@ const dc = ["superman" , "flash" , "batman"]
 // console.log(marvel[3][2]);
 
 // const arr = marvel.concat(dc) // return an array which is combination of elements 
-
+// console.log(arr);
 
 
 
 //prefered
 //spread array  -> elements spreads and breaks in singal entity
 //[ 'thor', 'ironman', 'spiderman', 'superman', 'flash', 'batman' ]
-const all_hero = [...marvel , ...dc]
+// const all_hero = [...marvel , ...dc]
 // console.log(all_hero);
 
 

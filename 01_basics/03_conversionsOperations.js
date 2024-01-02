@@ -8,7 +8,7 @@ let valueNumber = Number(score)
 
 // console.log(typeof(valueNumber))
 
-// console.log(valueNumber) //NaN not a number
+console.log(valueNumber) //NaN not a number 
 //"33" = 33
 //'2323ad" = NaN
 //true => 1 ; false => 0

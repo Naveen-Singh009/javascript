@@ -47,6 +47,6 @@ const chai = () =>{
 
 const addTwo1 = (num1, num2) => ( {userName : "Naveen"})  // returning object through arrow function
 
-console.log(addTwo1(34,22));
+// console.log(addTwo1(34,22));
 
 
