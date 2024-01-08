@@ -22,19 +22,19 @@ const map = new Map()
 map.set('IN' , "India")
 map.set('USA', "America")
 map.set('fr' , "France")
-// map.set('fr' , "France") // if we try to insert duplicate value it fails nothing change happend
+map.set('fr' , "France") // if we try to insert duplicate value it fails nothing change happend
 // console.log(map);
 
 // for (const key of map) {
-//     // console.log(key); // it will print all the key value insert in an arra0y
+//     console.log(key); // it will print all the key value insert in an arra0y
 
 // }
 
 // for accessing key and value saperately in an map 
 // we use 
-// for (const [key , value] of map) {
-//     console.log(key,' : ', value);
-// }
+for (const [key , value] of map) {
+    console.log(key,' : ', value);
+}
 
 
 // const myObject = {

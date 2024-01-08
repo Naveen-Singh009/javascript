@@ -14,7 +14,7 @@
 // falsy values 
 // false , 0 , -0 , BigInt 0n, "", null, undefined , NaN
 
-// other thab these all values are thruthy values 
+// other than these all values are thruthy values 
 // truthy values 
 // "0" -> true
 // 'false' -> true 

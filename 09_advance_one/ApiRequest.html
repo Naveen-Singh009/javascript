@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    
+    
+</body>
+<script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary"
+   const xhr = new XMLHttpRequest();
+   xhr.open('GET', requestUrl )
+
+//    xhr.onreadystatechange = function (){  // this function runs continuously when state changes // asynchronous programming
+//     console.log(xhr.readyState);
+
+//     if(xhr.readyState === 4){
+//     const data = JSON.parse(this.responseText) // response text is string // we can convert this sting into json
+//     console.log(data)
+//     console.log(data.login);
+//     }
+//    }
+
+   xhr.onreadystatechange = function (){  // this function runs continuously when state changes // asynchronous programming
+    console.log(xhr.readyState);
+
+    if(xhr.readyState === 4){
+    const data = JSON.parse(this.responseText) // response text is string // we can convert this sting into json
+    console.log(data);
+    const img = data.avatar_url
+    const follower = data.followers
+
+    const div = document.createElement('div')
+    div.className = 'main'
+    div.id = 'hitesh'
+
+    div.style.padding = '20px'
+    div.style.backgroundColor = '#ffffff'
+    const txtN = document.createTextNode(`Followers : ${follower}`);
+    const image = document.createElement('img')
+    image.src = "https://avatars.githubusercontent.com/u/11613311?v=4"
+    div.appendChild(image)
+    div.appendChild(txtN)
+
+    document.body.appendChild(div)
+
+    }
+   }
+
+   xhr.send();
+</script>
+</html>

@@ -32,9 +32,9 @@ function printMe(item) {
 
 // forEach have other access other than item 
 // like index , arr ki list
-// coding.forEach(( item , index, arr) => {
-//     console.log(item, index, arr);
-// } )
+coding.forEach(( item , index, arr) => {
+    console.log(item, index, arr);
+} )
 
 
 

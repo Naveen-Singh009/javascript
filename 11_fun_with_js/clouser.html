@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+
+<script>
+
+    //lexical scoping
+    // function outer(){
+    //     let username = "naveen"
+    //     console.log(email);//not accessible 
+    //     function inner(){
+    //         let email = "email";
+    //         console.log("inner",username);
+    //     }
+    //     function  innerTwo(){
+    //         console.log(email);// not accessible
+    //         console.log("innertwo", username);
+    //     }
+
+    //     inner();
+    //     innerTwo();
+    // }
+    //  outer()
+    // console.log(username);
+
+
+
+    // example 2  clouser 
+//// closure means jab ek function return krte hain to bs function return nhi hot a
+// uska pura lexical scope return hota hai...
+    // function makeFunc(){
+    //     const name = "Mozilla";
+    //     function displayName(){
+    //         console.log(name);
+    //     }
+
+    //     return displayName; // jab reference return krenge to sirf displayname nhi jaayega
+    //     //if outer function exist to uska scope bhi  jaayega
+    //     // whole memory is shared naa ki only execution context
+    // }
+    // const myFunc = makeFunc();
+    // myFunc();
+
+    
+
+</script>
+<script>
+    // on clicking on the button we handle the click 
+    // if we have multiple buttons this is the bad approach for 
+    // doing this shit // so we have do this by click handler 
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = "orange"
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = "green"
+    // }
+
+
+    // click handler 
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`;
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('green')
+
+</script>
+</html>
